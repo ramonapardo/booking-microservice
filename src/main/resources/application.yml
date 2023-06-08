@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+  datasource:
+    username: polonecio
+    password: 12345
+  application:
+    name: booking-microservice
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+server:
+  port: 0
